@@ -107,6 +107,7 @@ def main(args1, args2):
         train_lstm_ae(param_conf, train_iter, test_iter, model, criterion, optimizer, scheduler, device,
               out_dir =checkpoint_path , model_name= args2.model_name, epochs = args1.epochs)
 
+
     elif args1.architecture == "lstm_vae":
         model = LSTM_VAE(seq_in=args1.sequence_length, seq_out= args1.out_window, no_features=n_features,
                         output_size=len(target), embedding_dim=args1.embedding_dim, latent_dim=args1.latent_dim,
