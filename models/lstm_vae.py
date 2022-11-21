@@ -260,7 +260,6 @@ def train_lstm_vae(param_conf, no_features, train_iter, test_iter, model, criter
         Nf_lognorm = no_features
         Nf_binomial = 0
 
-
     train_loss = 0.0
     val_loss = 10 ** 16
     for epoch in tqdm(range(epochs), unit='epoch'):

@@ -143,7 +143,6 @@ def train_lstm_ae(param_conf, train_iter, test_iter, model, criterion, optimizer
            out_dir, model_name, epochs=100):
     """
     Training function.
-
     Args:
         train_iter: (DataLoader): train data iterator
         test_iter: (DataLoader): test data iterator
